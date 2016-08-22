@@ -26,8 +26,7 @@ Gem::Specification.new do |s|
                                'development_status' => 'active',
                                'production_status'  => 'unstable - testing recommended',
                                'release_draft'      => 'false',
-                               'release_prerelease' => 'false'
-                              }
+                               'release_prerelease' => 'false' }
   s.name                   = 'sensu-plugins-rabbitmq'
   s.platform               = Gem::Platform::RUBY
   s.post_install_message   = 'You can use the embedded Ruby by setting EMBEDDED_RUBY=true in /etc/default/sensu'
@@ -38,7 +37,7 @@ Gem::Specification.new do |s|
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
   s.version                = SensuPluginsRabbitMQ::Version::VER_STRING
 
-  s.add_runtime_dependency 'sensu-plugin',   '1.2.0'
+  s.add_runtime_dependency 'sensu-plugin',   '~> 1.2'
   s.add_runtime_dependency 'carrot-top',     '0.0.7'
   s.add_runtime_dependency 'stomp',          '1.3.4'
   s.add_runtime_dependency 'rest-client',    '1.8.0'
@@ -51,7 +50,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'pry',                       '~> 0.10'
   s.add_development_dependency 'rake',                      '~> 10.5'
   s.add_development_dependency 'redcarpet',                 '~> 3.2'
-  s.add_development_dependency 'rubocop',                   '~> 0.37'
+  s.add_development_dependency 'rubocop',                   '~> 0.40.0'
   s.add_development_dependency 'rspec',                     '~> 3.4'
   s.add_development_dependency 'yard',                      '~> 0.8'
 end
